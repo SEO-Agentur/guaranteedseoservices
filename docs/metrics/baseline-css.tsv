@@ -1,0 +1,15 @@
+# Baseline CSS/HTML bytes (logged-out, before refactor). raw / gzip in bytes.
+# head_style = all <style> in <head> (toolkit "critical" 52,781 + theme critical 673 + Additional CSS 5,189 + block-library inline ~8,400 from sidebar widgets)
+# body_style = per-page <style> block inside page content
+page	html_raw	html_gz	head_style_raw	head_style_gz	body_style_raw	body_style_gz
+guaranteed-seo-ranking	118927	25836	67092	13157	10484	2723
+guaranteed-seo-results	115170	25141	67092	13157	9123	2493
+guaranteed-seo	107834	23142	67092	13157	8428	2477
+m-e-e-a-t-our-team	102608	21786	67092	13157	7875	2395
+guaranteed-local-seo	125410	26167	67092	13157	14038	3255
+performance-based-seo	143865	25444	67092	13157	9997	2777
+guaranteed-seo-company	115163	24192	67092	13157	10591	2780
+guaranteed-seo-packages	102672	20789	67092	13157	0	0
+case-studies (CPT archive!)	71418	14229	58778	11767	0	0
+# External: style.css 81,126 raw (loaded async via toolkit defer + noscript), Google Fonts css2 ~12.5 KB.
+# Render-blocking/inline CSS per page: ~67 KB raw (+ up to 14 KB body style) = 67–81 KB inline per page, ~13–16 KB gzip.

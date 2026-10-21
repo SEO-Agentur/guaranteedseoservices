@@ -1,0 +1,43 @@
+# After refactor (gss theme + migrated content via admin preview), same method as baseline-layout.tsv.
+# over = elements whose box extends past the viewport (includes content inside horizontally scrollable table wrappers, which do not overflow the page). sw==w everywhere → no page-level horizontal overflow.
+page	w	sw	h	h1	dom	over
+/guaranteed-seo-ranking/	375	375	10657	1	679	5
+/guaranteed-seo-ranking/	768	768	7588	1	679	5
+/guaranteed-seo-ranking/	1024	1024	6177	1	679	0
+/guaranteed-seo-ranking/	1440	1440	5504	1	679	0
+/guaranteed-seo-results/	375	375	9855	1	652	43
+/guaranteed-seo-results/	768	768	7167	1	652	5
+/guaranteed-seo-results/	1024	1024	5982	1	652	0
+/guaranteed-seo-results/	1440	1440	5451	1	652	0
+/guaranteed-seo/	375	375	9630	1	461	5
+/guaranteed-seo/	768	768	6486	1	461	5
+/guaranteed-seo/	1024	1024	5332	1	461	0
+/guaranteed-seo/	1440	1440	4643	1	461	0
+/m-e-e-a-t-our-team/	375	375	9386	1	431	5
+/m-e-e-a-t-our-team/	768	768	7727	1	431	5
+/m-e-e-a-t-our-team/	1024	1024	5582	1	431	0
+/m-e-e-a-t-our-team/	1440	1440	4432	1	431	0
+/guaranteed-local-seo/	375	375	10057	1	738	5
+/guaranteed-local-seo/	768	768	8087	1	738	5
+/guaranteed-local-seo/	1024	1024	7970	1	738	0
+/guaranteed-local-seo/	1440	1440	4910	1	738	0
+/performance-based-seo/	375	375	10002	1	844	128
+/performance-based-seo/	768	768	7372	1	844	26
+/performance-based-seo/	1024	1024	5428	1	844	0
+/performance-based-seo/	1440	1440	4920	1	844	0
+/guaranteed-seo-company/	375	375	8114	1	653	107
+/guaranteed-seo-company/	768	768	6491	1	653	32
+/guaranteed-seo-company/	1024	1024	5280	1	653	0
+/guaranteed-seo-company/	1440	1440	4508	1	653	0
+/guaranteed-seo-packages/	375	375	7455	1	580	44
+/guaranteed-seo-packages/	768	768	5041	1	580	22
+/guaranteed-seo-packages/	1024	1024	4628	1	580	0
+/guaranteed-seo-packages/	1440	1440	3821	1	580	0
+/case-studies/	all	-	900	1	154	-	(still CPT archive until rewrite flush at cutover)
+/seo-guarantee/	375	375	6083	1	577	5
+/seo-guarantee/	768	768	4914	1	577	5
+/seo-guarantee/	1024	1024	4036	1	577	0
+/seo-guarantee/	1440	1440	3793	1	577	0
+/	375	375	9381	1	525	5
+/	768	768	6183	1	525	5
+/	1024	1024	5886	1	525	0
