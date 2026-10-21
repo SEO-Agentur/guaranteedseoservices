@@ -1,0 +1,767 @@
+<!-- wp:group {"tagName":"section","anchor":"ds-top","className":"gss-hero gss-hero--fade"} -->
+<section id="ds-top" class="wp-block-group gss-hero gss-hero--fade"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:html -->
+<nav class="gss-crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span>Design System</nav>
+<!-- /wp:html -->
+
+<!-- wp:group {"className":"gss-hero__copy"} -->
+<div class="wp-block-group gss-hero__copy"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Private · living specification</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Design System</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-lead"} -->
+<p class="gss-lead">Visual specification and regression reference for the shared gss-* design system. The theme owns presentation (tokens, components, layouts and templates in gss.css); Gutenberg owns content (blocks composed from these classes). If something here looks wrong after a theme update, fix gss.css, never a page.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"gss-eyebrow gss-eyebrow--muted gss-mt"} -->
+<p class="gss-eyebrow gss-eyebrow--muted gss-mt">Contents</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"gss-pills gss-plain"} -->
+<ul class="wp-block-list gss-pills gss-plain"><!-- wp:list-item -->
+<li><a href="#ds-tokens">01 Tokens</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-icons">02 Icons</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-buttons">03 Buttons &amp; links</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-layouts">04 Layouts</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-heroes">05 Heroes</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-surfaces">06 Surfaces</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-meta">07 Meta</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-lists">08 Lists</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-forms">09 Forms</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-pricing">10 Pricing</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-process">11 Process</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-data">12 Data</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-accordion">13 Accordion</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-people">14 People</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-cta">15 CTA &amp; guarantee</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-interaction">16 Interaction</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-mock">17 Mock UI</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-templates">18 Template positions</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ds-workflow">19 Workflow</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-tokens","className":"gss-section"} -->
+<section id="ds-tokens" class="wp-block-group gss-section"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Foundations</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Tokens</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">CSS custom properties on :root (gss.css §1) plus type helpers and gss-eyebrow (+--muted --gold --light --pill). Used on every page.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Colour</h3>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<div class="gss-chips"><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#0f1f33"></i><b>--gss-ink<small>#0f1f33</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#33465b"></i><b>--gss-text<small>#33465b</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#5b6b7d"></i><b>--gss-muted<small>#5b6b7d</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint gss-ico--line" style="--c:#e3e9f0"></i><b>--gss-line<small>#e3e9f0</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint gss-ico--line" style="--c:#eef2f6"></i><b>--gss-line-2<small>#eef2f6</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#0f2338"></i><b>--gss-navy<small>#0f2338</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#16324f"></i><b>--gss-navy-2<small>#16324f</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#0b1d33"></i><b>--gss-deep<small>#0b1d33</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#1a5fe0"></i><b>--gss-blue<small>#1a5fe0</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#1550c4"></i><b>--gss-blue-d<small>#1550c4</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint gss-ico--line" style="--c:#e8f0fd"></i><b>--gss-blue-50<small>#e8f0fd</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint gss-ico--line" style="--c:#f3f7ff"></i><b>--gss-blue-25<small>#f3f7ff</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint gss-ico--line" style="--c:#f5f8fb"></i><b>--gss-soft<small>#f5f8fb</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint gss-ico--line" style="--c:#eef5fc"></i><b>--gss-sky<small>#eef5fc</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint gss-ico--line" style="--c:#ffffff"></i><b>--gss-white<small>#ffffff</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#d6a044"></i><b>--gss-gold<small>#d6a044</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#a56a0d"></i><b>--gss-gold-ink<small>#a56a0d</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint gss-ico--line" style="--c:#fff6e3"></i><b>--gss-gold-50<small>#fff6e3</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#1e9e5a"></i><b>--gss-green<small>#1e9e5a</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint gss-ico--line" style="--c:#e3f6e9"></i><b>--gss-green-50<small>#e3f6e9</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#f59e0b"></i><b>--gss-amber<small>#f59e0b</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#f08a24"></i><b>--gss-orange<small>#f08a24</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint" style="--c:#d64545"></i><b>--gss-red<small>#d64545</small></b></div><div class="gss-chip"><i class="gss-ico gss-ico--sm gss-ico--tint gss-ico--line" style="--c:#fdecec"></i><b>--gss-red-50<small>#fdecec</small></b></div></div><p class="gss-fine gss-mt-sm">Swatches use gss-ico--tint with a data value <code>--c</code>; legend dots and pips use the same variable:</p><div class="gss-legend gss-mt-sm"><span style="--c:#1a5fe0">blue</span><span style="--c:#1e9e5a">green</span><span style="--c:#d6a044">gold</span><span style="--c:#d64545">red</span><span>pips <i class="gss-pip" style="--c:#0f2338"></i><i class="gss-pip"></i><i class="gss-pip gss-pip--off"></i></span></div>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":3,"className":"gss-mt"} -->
+<h3 class="wp-block-heading gss-mt">Radii, shadows, layout</h3>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<div class="gss-table-wrap"><table class="gss-table gss-table--compact"><thead><tr><th>Token</th><th>Value</th><th>Used by</th></tr></thead><tbody><tr><td>--gss-r-sm</td><td>8px</td><td>gss-btn, inputs, gss-urlform--joined</td></tr><tr><td>--gss-r</td><td>12px</td><td>gss-card, gss-table-wrap, gss-faq items</td></tr><tr><td>--gss-r-lg</td><td>16px</td><td>sub-menus, large surfaces</td></tr><tr><td>--gss-r-pill</td><td>999px</td><td>gss-tag, gss-btn--pill, gss-tabs__nav</td></tr><tr><td>--gss-shadow</td><td>0 6px 20px / .06</td><td>gss-card (default)</td></tr><tr><td>--gss-shadow-lg</td><td>0 24px 60px / .16</td><td>gss-card--float, gss-mock--tilt</td></tr><tr><td>--gss-shadow-hover</td><td>0 12px 28px / .09</td><td>gss-card--hover:hover</td></tr><tr><td>--gss-max · --gss-gutter · --gss-gap</td><td>1200px · 16px · 16px</td><td>gss-wrap, gss-grid</td></tr><tr><td>--gss-sec</td><td>clamp(44px, 6vw, 64px)</td><td>gss-section padding</td></tr><tr><td>--gss-font</td><td>Inter, system-ui</td><td>body, gss-page</td></tr><tr><td>--gss-hero-img</td><td>theme upload (webp)</td><td>gss-hero--image/--photo/--dark, gss-cta, gss-photo-fade</td></tr></tbody></table></div><div class="gss-grid gss-grid--4 gss-mt-sm"><div class="gss-card gss-card--flat gss-card--compact"><b>No shadow</b><p>gss-card--flat</p></div><div class="gss-card gss-card--compact"><b>--gss-shadow</b><p>gss-card</p></div><div class="gss-card gss-card--float gss-card--compact"><b>--gss-shadow-lg</b><p>gss-card--float</p></div><div class="gss-card gss-card--hover gss-card--compact"><b>--gss-shadow-hover</b><p>gss-card--hover (hover me)</p></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":3,"className":"gss-mt"} -->
+<h3 class="wp-block-heading gss-mt">Type scale</h3>
+<!-- /wp:heading -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Heading 2 sample</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Heading 3 sample</h3>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Heading 4 sample</h4>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<div class="gss-card gss-card--flat gss-flow"><p class="gss-fine">H1 32–52px is hero-only (see top) · H2 24–34px · H3 17px · H4 15px · gss-h2--sm 21–24px</p><p class="gss-lead">gss-lead — Lead paragraph for hero and intro copy.</p><p class="gss-sub">gss-sub — Section subtitle in muted colour.</p><p>Paragraph — default body text at 16px.</p><p class="gss-muted">gss-muted — muted body text.</p><p class="gss-small">gss-small — 13.5px helper text.</p><p class="gss-fine">gss-fine — 12px fine print.</p><p><b class="gss-h2">gss-h2 on inline text</b></p><p><b class="gss-h3">gss-h3 on inline text</b></p><div class="gss-row"><span class="gss-num">000</span><span class="gss-big">+00%</span><span class="gss-up">gss-up +0%</span><span class="gss-down">gss-down −0%</span><span class="gss-caution">gss-caution</span></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":3,"className":"gss-mt"} -->
+<h3 class="wp-block-heading gss-mt">Eyebrows</h3>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<div class="gss-grid gss-grid--5 gss-mt-sm"><div class="gss-card gss-card--flat gss-card--compact"><p class="gss-eyebrow">Default</p><p>gss-eyebrow</p></div><div class="gss-card gss-card--flat gss-card--compact"><p class="gss-eyebrow gss-eyebrow--muted">Muted</p><p>--muted</p></div><div class="gss-card gss-card--flat gss-card--compact"><p class="gss-eyebrow gss-eyebrow--gold">Gold</p><p>--gold</p></div><div class="gss-mock gss-mock--dark"><p class="gss-eyebrow gss-eyebrow--light">Light</p><p>--light (dark bands)</p></div><div class="gss-card gss-card--flat gss-card--compact"><p class="gss-eyebrow gss-eyebrow--pill">Pill</p><p>--pill</p></div></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-icons","className":"gss-section gss-section--soft"} -->
+<section id="ds-icons" class="wp-block-group gss-section gss-section--soft"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Foundations</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Icons</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">svg.gss-icon › use href=“icons.svg#name” (+--sm --lg). Every symbol in the sprite; large illustrations stay inline SVG.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-grid gss-grid--6 gss-grid--gap-sm"><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#check"/></svg>check</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#arrow-right"/></svg>arrow-right</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#search"/></svg>search</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#search-plus"/></svg>search-plus</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#target"/></svg>target</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#calendar"/></svg>calendar</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#eye"/></svg>eye</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#cursor"/></svg>cursor</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#users"/></svg>users</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#chart-bars"/></svg>chart-bars</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#chart-bars-solid"/></svg>chart-bars-solid</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#chart-box"/></svg>chart-box</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#layout"/></svg>layout</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#trend-up"/></svg>trend-up</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#trophy"/></svg>trophy</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#cart"/></svg>cart</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#globe"/></svg>globe</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#doc-check"/></svg>doc-check</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#doc"/></svg>doc</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#clipboard"/></svg>clipboard</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#clipboard-check"/></svg>clipboard-check</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#shield"/></svg>shield</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#shield-check"/></svg>shield-check</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#shield-check-solid"/></svg>shield-check-solid</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#briefcase"/></svg>briefcase</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#clock"/></svg>clock</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#mountain"/></svg>mountain</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#arrow-up-right"/></svg>arrow-up-right</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#percent"/></svg>percent</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#mail"/></svg>mail</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#pin"/></svg>pin</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#phone"/></svg>phone</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#directions"/></svg>directions</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#home"/></svg>home</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#building"/></svg>building</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#franchise"/></svg>franchise</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#code"/></svg>code</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#settings"/></svg>settings</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#tag"/></svg>tag</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#link"/></svg>link</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#megaphone"/></svg>megaphone</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#headset"/></svg>headset</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#check-circle"/></svg>check-circle</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#info"/></svg>info</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#database"/></svg>database</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#list"/></svg>list</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#warning"/></svg>warning</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#package"/></svg>package</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#bolt"/></svg>bolt</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#check-square"/></svg>check-square</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#rocket"/></svg>rocket</span><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#wallet"/></svg>wallet</span></div><div class="gss-row gss-mt"><svg class="gss-icon gss-icon--sm" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#target"/></svg><span class="gss-fine">gss-icon--sm 16px</span><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#target"/></svg><span class="gss-fine">gss-icon 20px</span><svg class="gss-icon gss-icon--lg" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#target"/></svg><span class="gss-fine">gss-icon--lg 28px</span></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-buttons","className":"gss-section"} -->
+<section id="ds-buttons" class="wp-block-group gss-section"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Actions</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Buttons &amp; links</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">gss-btn (+--navy --ghost --light --line --pill --block --sm), core/button (default, is-style-outline, is-style-navy), gss-link (+--ink). All pages. gss-link--light is documented but undefined.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-row"><a class="gss-btn" href="#ds-buttons">gss-btn</a><a class="gss-btn gss-btn--navy" href="#ds-buttons">--navy</a><a class="gss-btn gss-btn--ghost" href="#ds-buttons">--ghost</a><a class="gss-btn gss-btn--pill" href="#ds-buttons">--pill</a><a class="gss-btn gss-btn--sm" href="#ds-buttons">--sm</a><a class="gss-btn" href="#ds-buttons"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#arrow-right"/></svg>With icon</a><button class="gss-btn" type="button" disabled>Disabled button</button></div><div class="gss-grid gss-grid--3 gss-mt-sm"><a class="gss-btn gss-btn--block" href="#ds-buttons">gss-btn--block</a></div><div class="gss-cta gss-mt"><div class="gss-wrap"><div class="gss-row"><a class="gss-btn gss-btn--light" href="#ds-buttons">gss-btn--light</a><a class="gss-btn gss-btn--line" href="#ds-buttons">gss-btn--line</a><span class="gss-chip gss-chip--dark">on dark band (gss-cta)</span></div></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":3,"className":"gss-mt"} -->
+<h3 class="wp-block-heading gss-mt">core/button block styles</h3>
+<!-- /wp:heading -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#ds-buttons">Default</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#ds-buttons">is-style-outline</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-navy"} -->
+<div class="wp-block-button is-style-navy"><a class="wp-block-button__link wp-element-button" href="#ds-buttons">is-style-navy</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:html -->
+<div class="gss-row gss-mt"><a class="gss-link" href="#ds-buttons">gss-link →</a><a class="gss-link gss-link--ink" href="#ds-buttons">gss-link--ink →</a><a class="gss-link" href="#ds-buttons">Link with icon <svg class="gss-icon gss-icon--sm" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#arrow-right"/></svg></a></div><div class="gss-note gss-mt"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#info"/></svg><span>States: hover lifts 1px and adds a shadow (ghost/outline also darken the border); gss-link underlines on hover. Keyboard focus uses the global :focus-visible 3px gold outline — tab through this section to check. There is no dedicated disabled style; disabled buttons rely on the browser default cursor.</span></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-layouts","className":"gss-section gss-section--soft"} -->
+<section id="ds-layouts" class="wp-block-group gss-section gss-section--soft"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Layout</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Layouts</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">gss-section › gss-wrap (+--narrow) › gss-grid, gss-row, gss-head, gss-flow, gss-mt(-sm). Grids collapse 1 → 2 → n at 560 / 800 / 1100px. All pages.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<p class="gss-fine gss-mt">gss-grid--2</p><div class="gss-grid gss-grid--2"><div class="gss-card gss-card--compact">1</div><div class="gss-card gss-card--compact">2</div></div><p class="gss-fine gss-mt">gss-grid--3</p><div class="gss-grid gss-grid--3"><div class="gss-card gss-card--compact">1</div><div class="gss-card gss-card--compact">2</div><div class="gss-card gss-card--compact">3</div></div><p class="gss-fine gss-mt">gss-grid--4</p><div class="gss-grid gss-grid--4"><div class="gss-card gss-card--compact">1</div><div class="gss-card gss-card--compact">2</div><div class="gss-card gss-card--compact">3</div><div class="gss-card gss-card--compact">4</div></div><p class="gss-fine gss-mt">gss-grid--5</p><div class="gss-grid gss-grid--5"><div class="gss-card gss-card--compact">1</div><div class="gss-card gss-card--compact">2</div><div class="gss-card gss-card--compact">3</div><div class="gss-card gss-card--compact">4</div><div class="gss-card gss-card--compact">5</div></div><p class="gss-fine gss-mt">gss-grid--6</p><div class="gss-grid gss-grid--6"><div class="gss-card gss-card--compact">1</div><div class="gss-card gss-card--compact">2</div><div class="gss-card gss-card--compact">3</div><div class="gss-card gss-card--compact">4</div><div class="gss-card gss-card--compact">5</div><div class="gss-card gss-card--compact">6</div></div><p class="gss-fine gss-mt">gss-grid--8</p><div class="gss-grid gss-grid--8"><div class="gss-card gss-card--compact">1</div><div class="gss-card gss-card--compact">2</div><div class="gss-card gss-card--compact">3</div><div class="gss-card gss-card--compact">4</div><div class="gss-card gss-card--compact">5</div><div class="gss-card gss-card--compact">6</div><div class="gss-card gss-card--compact">7</div><div class="gss-card gss-card--compact">8</div></div><p class="gss-fine gss-mt">gss-grid--split</p><div class="gss-grid gss-grid--split"><div class="gss-card gss-card--compact">1.25fr</div><div class="gss-card gss-card--compact">1fr</div></div><p class="gss-fine gss-mt">gss-grid--split-r</p><div class="gss-grid gss-grid--split-r"><div class="gss-card gss-card--compact">1fr</div><div class="gss-card gss-card--compact">1.25fr</div></div><p class="gss-fine gss-mt">gss-grid--1-2</p><div class="gss-grid gss-grid--1-2"><div class="gss-card gss-card--compact">1fr</div><div class="gss-card gss-card--compact">2fr</div></div><p class="gss-fine gss-mt">gss-grid--2-1</p><div class="gss-grid gss-grid--2-1"><div class="gss-card gss-card--compact">2fr</div><div class="gss-card gss-card--compact">1fr</div></div><p class="gss-fine gss-mt">gss-grid--hero</p><div class="gss-grid gss-grid--hero"><div class="gss-card gss-card--compact">Copy 1.15fr</div><div class="gss-card gss-card--compact">Visual .9fr</div><div class="gss-card gss-card--compact">Form .85fr</div></div><p class="gss-fine gss-mt">gss-grid--hero-form</p><div class="gss-grid gss-grid--hero-form"><div class="gss-card gss-card--compact">Copy</div><div class="gss-card gss-card--compact">Form 400px</div></div><p class="gss-fine gss-mt">gss-grid--thirds</p><div class="gss-grid gss-grid--thirds"><div class="gss-card gss-card--compact">FAQ 1.2fr</div><div class="gss-card gss-card--compact">Links .9fr</div><div class="gss-card gss-card--compact">Author 1fr</div></div><p class="gss-fine gss-mt">gss-grid--halves</p><div class="gss-grid gss-grid--halves"><div class="gss-card gss-card--compact">1/2 (≥1101px)</div><div class="gss-card gss-card--compact">1/2</div></div><p class="gss-fine gss-mt">gss-grid--4 gss-grid--2-xs</p><div class="gss-grid gss-grid--4 gss-grid--2-xs"><div class="gss-card gss-card--compact">2 cols</div><div class="gss-card gss-card--compact">below</div><div class="gss-card gss-card--compact">560px</div><div class="gss-card gss-card--compact">too</div></div><p class="gss-fine gss-mt">gss-grid--3 + child gss-span-2</p><div class="gss-grid gss-grid--3"><div class="gss-card gss-card--compact gss-span-2">gss-span-2</div><div class="gss-card gss-card--compact">1</div><div class="gss-card gss-card--compact">2</div><div class="gss-card gss-card--compact">3</div></div><p class="gss-fine gss-mt">Modifiers (not shown): gss-grid--gap-sm 10px · --gap-lg · --center · --start · --end</p><p class="gss-fine gss-mt">gss-wrap gss-wrap--narrow (max 820px; FAQ sections)</p><div class="gss-wrap gss-wrap--narrow"><div class="gss-card gss-card--compact">gss-wrap--narrow</div></div><p class="gss-fine gss-mt">gss-section modifiers (demo boxes)</p><div class="gss-grid gss-grid--3"><div class="gss-section gss-section--sky gss-section--tight"><div class="gss-wrap"><p class="gss-small">gss-section--sky gss-section--tight</p></div></div><div class="gss-section gss-section--dark gss-section--tight"><div class="gss-wrap"><p class="gss-small">gss-section--dark gss-section--tight</p></div></div><div class="gss-section gss-section--soft gss-section--line gss-section--tight"><div class="gss-wrap"><p class="gss-small">gss-section--soft gss-section--line gss-section--tight</p></div></div><div class="gss-section gss-section--sky gss-section--flush"><div class="gss-wrap"><p class="gss-small">gss-section--sky gss-section--flush</p></div></div><div class="gss-section gss-section--sky gss-section--top-0"><div class="gss-wrap"><p class="gss-small">gss-section--sky gss-section--top-0</p></div></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":3,"className":"gss-mt"} -->
+<h3 class="wp-block-heading gss-mt">gss-row</h3>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<div class="gss-card gss-card--flat gss-flow gss-mt-sm"><div class="gss-row"><span class="gss-fine">gss-row</span><span class="gss-tag">One</span><span class="gss-tag">Two</span></div><div class="gss-row gss-row--sm"><span class="gss-fine">gss-row --sm</span><span class="gss-tag">One</span><span class="gss-tag">Two</span></div><div class="gss-row gss-row--between"><span class="gss-fine">gss-row --between</span><span class="gss-tag">One</span><span class="gss-tag">Two</span></div><div class="gss-row gss-row--center"><span class="gss-fine">gss-row --center</span><span class="gss-tag">One</span><span class="gss-tag">Two</span></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":3,"className":"gss-mt"} -->
+<h3 class="wp-block-heading gss-mt">gss-head</h3>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<div class="gss-grid gss-grid--2 gss-mt-sm"><div class="gss-card gss-card--flat"><div class="gss-head"><div class="gss-head__main"><p class="gss-eyebrow">Eyebrow</p><h3 class="gss-h2--sm">gss-head</h3><p class="gss-sub">Supporting text.</p></div><p class="gss-head__note">gss-head__note or a gss-link aligns right.</p></div></div><div class="gss-card gss-card--flat"><div class="gss-head gss-head--center"><div class="gss-head__main"><p class="gss-eyebrow">Eyebrow</p><h3 class="gss-h2--sm">gss-head--center</h3><p class="gss-sub">Supporting text.</p></div></div></div></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-heroes","className":"gss-section"} -->
+<section id="ds-heroes" class="wp-block-group gss-section"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Hero</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Heroes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">section.gss-hero (+--image --photo --dark --mountains --fade --flush-bottom) › gss-wrap › gss-grid › gss-hero__copy (+--narrow). First block of every page; demos use H2.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","className":"gss-hero"} -->
+<section class="wp-block-group gss-hero"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-hero__copy"} -->
+<div class="wp-block-group gss-hero__copy"><!-- wp:html -->
+<nav class="gss-crumbs" aria-label="Breadcrumb"><a href="#ds-heroes">Home</a><span>/</span>Page</nav>
+<!-- /wp:html -->
+
+<!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">gss-hero (default, block recipe)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Hero title</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-lead"} -->
+<p class="gss-lead">Supporting text.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#ds-heroes">Primary</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#ds-heroes">Secondary</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-grid gss-mt"><section class="gss-hero gss-hero--image"><div class="gss-wrap"><div class="gss-hero__copy"><p class="gss-eyebrow">gss-hero gss-hero--image</p><h2>Hero with right photo fade</h2><p class="gss-lead">Supporting text.</p></div></div></section><section class="gss-hero gss-hero--photo"><div class="gss-wrap"><div class="gss-hero__copy"><p class="gss-eyebrow">gss-hero gss-hero--photo</p><h2>Full photo with white fade</h2><p class="gss-lead">Supporting text.</p></div></div></section><section class="gss-hero gss-hero--dark"><div class="gss-wrap"><div class="gss-hero__copy"><p class="gss-eyebrow">gss-hero gss-hero--dark</p><h2>Dark photo overlay</h2><p class="gss-lead">Supporting text.</p><div class="gss-row gss-mt"><a class="gss-btn" href="#ds-heroes">Primary</a><a class="gss-btn gss-btn--line" href="#ds-heroes">Secondary</a></div></div></div></section><section class="gss-hero gss-hero--mountains"><div class="gss-wrap"><div class="gss-hero__copy"><p class="gss-eyebrow">gss-hero gss-hero--mountains</p><h2>Drawn mountain ridge</h2><p class="gss-lead">Supporting text.</p></div></div></section><section class="gss-hero gss-hero--fade"><div class="gss-wrap"><div class="gss-hero__copy"><p class="gss-eyebrow">gss-hero gss-hero--fade</p><h2>Soft bottom glow</h2><p class="gss-lead">Supporting text.</p></div></div></section><section class="gss-hero gss-hero--mountains gss-hero--flush-bottom"><div class="gss-wrap"><div class="gss-grid gss-grid--split gss-grid--end"><div class="gss-hero__copy"><p class="gss-eyebrow">gss-hero gss-hero--mountains gss-hero--flush-bottom</p><h2>Flush bottom (media sits on the edge)</h2><p class="gss-lead">Supporting text.</p></div><div class="gss-portrait"><div class="gss-portrait__ini">AB</div><b>Name</b><span>Role</span></div></div></div></section><section class="gss-hero"><div class="gss-wrap"><div class="gss-grid gss-grid--hero-form gss-grid--gap-lg gss-grid--start"><div class="gss-hero__copy"><p class="gss-eyebrow">gss-hero</p><h2>Hero with form (gss-grid--hero-form)</h2><p class="gss-lead">Supporting text.</p></div><form class="gss-form gss-card gss-card--float" action="#" method="get" onsubmit="return false"><h3>Form title</h3><label for="ds-hf-url">Label</label><input id="ds-hf-url" type="url" name="ds_url" placeholder="https://example.com"><button type="submit" class="gss-btn gss-btn--block">Button →</button><p class="gss-fine gss-center">Fine print</p></form></div></div></section><section class="gss-hero gss-hero--fade"><div class="gss-wrap"><div class="gss-hero__copy"><p class="gss-eyebrow">gss-hero gss-hero--fade</p><h2>Hero with stats (gss-stats--compact)</h2><p class="gss-lead">Supporting text.</p><div class="gss-stats gss-stats--compact gss-mt"><div class="gss-stat gss-stat--row"><span class="gss-ico gss-ico--sm"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#layout"/></svg></span>Stat label</div><div class="gss-stat gss-stat--row"><span class="gss-ico gss-ico--sm"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#search"/></svg></span>Stat label</div></div></div></div></section><section class="gss-hero gss-hero--image"><div class="gss-wrap"><div class="gss-grid gss-grid--split gss-grid--center"><div class="gss-hero__copy"><p class="gss-eyebrow">gss-hero gss-hero--image</p><h2>Hero with trust chips + gss-hero__art</h2><p class="gss-lead">Supporting text.</p><div class="gss-chips"><span class="gss-chip gss-chip--pill"><i class="gss-ico gss-ico--round gss-ico--sm"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#shield-check"/></svg></i>Trust chip</span><span class="gss-chip gss-chip--pill"><i class="gss-ico gss-ico--round gss-ico--sm"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#doc"/></svg></i>Trust chip</span></div></div><div class="gss-hero__art"><div class="gss-mock gss-mock--tilt"><b>gss-hero__art</b><span class="gss-skel" style="--w:80%"></span><span class="gss-skel" style="--w:60%"></span></div></div></div></div></section><section class="gss-hero gss-hero--photo"><div class="gss-path" aria-hidden="true"><svg style="--x:52%;--w:26%" viewBox="0 0 1000 600" preserveAspectRatio="none"><path d="M120 560 C 260 520, 140 420, 300 380 S 220 250, 330 200 S 380 90, 420 60" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="10 10"/></svg><span class="gss-path__dot" style="--x:55%;--y:88%"></span><span class="gss-path__lbl" style="--x:57%;--y:86%">Label one</span><span class="gss-path__dot" style="--x:60%;--y:55%"></span><span class="gss-path__lbl" style="--x:62%;--y:53%">Label two</span><span class="gss-path__lbl" style="--x:58%;--y:8%">Label three</span></div><div class="gss-wrap"><div class="gss-hero__copy gss-hero__copy--narrow"><p class="gss-eyebrow gss-eyebrow--muted">gss-hero--photo + gss-path overlay</p><h2>Path overlay (≥1101px)</h2><p class="gss-lead">gss-path › svg (--x, --w) + gss-path__dot / __lbl (--x, --y). Hidden below 1100px. Copy uses gss-hero__copy--narrow.</p></div></div></section></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-surfaces","className":"gss-section gss-section--soft"} -->
+<section id="ds-surfaces" class="wp-block-group gss-section gss-section--soft"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Surfaces</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Cards &amp; surfaces</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">gss-card (+--flat --soft --sky --compact --lg --flush --float --hover --gold --green --red --blue --amber --accent-* --row --center --stack, __foot), gss-ico, gss-note, gss-divider, media. All pages. gss-card--dark/--featured, gss-ico--solid/--navy/--green are undefined.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-grid gss-grid--4"><div class="gss-card"><h3>gss-card</h3></div><div class="gss-card gss-card--flat"><h3>gss-card --flat</h3></div><div class="gss-card gss-card--soft"><h3>gss-card --soft</h3></div><div class="gss-card gss-card--sky"><h3>gss-card --sky</h3></div><div class="gss-card gss-card--compact"><h3>gss-card --compact</h3></div><div class="gss-card gss-card--lg"><h3>gss-card --lg</h3></div><div class="gss-card gss-card--float"><h3>gss-card --float</h3></div><div class="gss-card gss-card--hover"><h3>gss-card --hover</h3></div><div class="gss-card gss-card--gold"><h3>gss-card --gold</h3></div><div class="gss-card gss-card--green"><h3>gss-card --green</h3></div><div class="gss-card gss-card--red"><h3>gss-card --red</h3></div><div class="gss-card gss-card--blue"><h3>gss-card --blue</h3></div><div class="gss-card gss-card--amber"><h3>gss-card --amber</h3></div><div class="gss-card gss-card--accent"><h3>gss-card --accent</h3></div><div class="gss-card gss-card--accent gss-card--accent-green"><h3>gss-card --accent --accent-green</h3></div><div class="gss-card gss-card--accent gss-card--accent-amber gss-card--accent-frame"><h3>gss-card --accent --accent-amber --accent-frame</h3></div><div class="gss-card gss-card--accent gss-card--accent-red"><h3>gss-card --accent --accent-red</h3></div><div class="gss-card gss-card--accent gss-card--accent-blue"><h3>gss-card --accent --accent-blue</h3></div><div class="gss-card gss-card--center"><h3>gss-card --center</h3><span class="gss-ico"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#target"/></svg></span><p>Supporting text.</p></div><div class="gss-card gss-card--row"><span class="gss-ico"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#doc"/></svg></span><div><h3>gss-card --row</h3><p>Icon left, text right.</p></div></div><div class="gss-card gss-card--stack"><h3>gss-card --stack</h3><p>Supporting text.</p><a class="gss-link gss-card__foot" href="#ds-surfaces">gss-card__foot →</a></div><a class="gss-card gss-card--flat gss-card--hover gss-card--row gss-card--compact" href="#ds-surfaces"><span class="gss-ico gss-ico--plain"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#link"/></svg></span><span><b>a.gss-card</b><span class="gss-link">Whole card is a link →</span></span></a></div>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":3,"className":"gss-mt"} -->
+<h3 class="wp-block-heading gss-mt">gss-ico</h3>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<div class="gss-row gss-mt-sm"><span class="gss-row gss-row--sm"><span class="gss-ico"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#target"/></svg></span><span class="gss-fine">default</span></span><span class="gss-row gss-row--sm"><span class="gss-ico gss-ico--round"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#check"/></svg></span><span class="gss-fine">round</span></span><span class="gss-row gss-row--sm"><span class="gss-ico gss-ico--sm"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#pin"/></svg></span><span class="gss-fine">sm</span></span><span class="gss-row gss-row--sm"><span class="gss-ico gss-ico--lg"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#rocket"/></svg></span><span class="gss-fine">lg</span></span><span class="gss-row gss-row--sm"><span class="gss-ico gss-ico--white"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#shield-check"/></svg></span><span class="gss-fine">white</span></span><span class="gss-row gss-row--sm"><span class="gss-ico gss-ico--line"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#phone"/></svg></span><span class="gss-fine">line</span></span><span class="gss-row gss-row--sm"><span class="gss-ico gss-ico--plain"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#settings"/></svg></span><span class="gss-fine">plain</span></span><span class="gss-row gss-row--sm"><span class="gss-ico gss-ico--gold"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#trophy"/></svg></span><span class="gss-fine">gold</span></span><span class="gss-row gss-row--sm"><span class="gss-ico gss-ico--red"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#warning"/></svg></span><span class="gss-fine">red</span></span><span class="gss-row gss-row--sm"><span class="gss-ico gss-ico--tint" style="--c:#1e9e5a"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#code"/></svg></span><span class="gss-fine">tint</span></span></div>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":3,"className":"gss-mt"} -->
+<h3 class="wp-block-heading gss-mt">Notes, dividers, media</h3>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<div class="gss-grid gss-grid--3 gss-mt-sm"><div class="gss-flow"><div class="gss-note"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#info"/></svg>gss-note — info line with icon.</div><div class="gss-note gss-note--sky"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#info"/></svg>gss-note--sky</div><div class="gss-note gss-note--center">gss-note--center</div><hr class="gss-divider"><p class="gss-fine">↑ hr.gss-divider</p><div class="gss-photos"><span></span><span></span></div><p class="gss-fine">gss-photos</p></div><div class="gss-placeholder"><span>GSS-PLACEHOLDER</span><div class="gss-overlay"><b>gss-overlay</b>Floating label on media</div></div><div class="gss-placeholder gss-placeholder--stripes"><span>--STRIPES</span></div></div><div class="gss-card gss-card--sky gss-photo-fade gss-photo-fade--wide gss-mt"><h3>gss-photo-fade gss-photo-fade--wide</h3><p>Theme photo fades in on the right of a card or section (hidden below 680px).</p></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-meta","className":"gss-section"} -->
+<section id="ds-meta" class="wp-block-group gss-section"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Meta</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Tags, chips, crumbs, pills</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">gss-tag (all colours), gss-chips › gss-chip (+--pill --plain --dark), gss-crumbs (8 page heroes), gss-pills (team).</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-row gss-row--sm"><span class="gss-tag">gss-tag</span><span class="gss-tag gss-tag--green">green</span><span class="gss-tag gss-tag--gold">gold</span><span class="gss-tag gss-tag--red">red</span><span class="gss-tag gss-tag--amber">amber</span><span class="gss-tag gss-tag--orange">orange</span><span class="gss-tag gss-tag--solid">solid</span><span class="gss-tag gss-tag--navy">navy</span><span class="gss-tag gss-tag--outline">outline</span><span class="gss-tag gss-tag--caps">caps</span><span class="gss-tag gss-tag--square">square</span><span class="gss-tag gss-tag--caps gss-tag--square">caps square</span><span class="gss-tag gss-tag--gold gss-tag--caps gss-tag--square">gold caps square</span></div><div class="gss-chips gss-mt-sm"><span class="gss-chip"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#calendar"/></svg>gss-chip</span><span class="gss-chip"><b>Chip title<small>with small text</small></b></span><span class="gss-chip gss-chip--pill"><i class="gss-ico gss-ico--round gss-ico--sm"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#target"/></svg></i>gss-chip--pill</span><span class="gss-chip gss-chip--plain"><i class="gss-ico"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#bolt"/></svg></i>gss-chip--plain</span></div><div class="gss-mock gss-mock--dark gss-mt-sm"><div class="gss-chips"><span class="gss-chip gss-chip--dark"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#link"/></svg>gss-chip--dark</span><span class="gss-chip gss-chip--dark"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#chart-bars"/></svg>on dark</span></div></div><nav class="gss-crumbs gss-mt" aria-label="Breadcrumb"><a href="#ds-meta">Home</a><span>/</span><a href="#ds-meta">Parent</a><span>/</span>Current page</nav><div class="gss-pills"><span>Pill one</span><span>Pill two</span><span>Pill three</span></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-lists","className":"gss-section gss-section--soft"} -->
+<section id="ds-lists" class="wp-block-group gss-section gss-section--soft"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Lists</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Lists</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">gss-checks (+--blue --green --circle --ring --x --warn --lines --icons --cards), gss-ticks (+--light), gss-features (+--2), gss-linklist (+--boxed), gss-timeline (team), gss-stagger (company).</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"gss-fine"} -->
+<p class="gss-fine">gss-checks — core/list block recipe:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"gss-checks"} -->
+<ul class="wp-block-list gss-checks"><!-- wp:list-item -->
+<li>List item 1</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>List item 2</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>List item 3</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:html -->
+<div class="gss-grid gss-grid--4 gss-mt-sm"><div><p class="gss-fine">gss-checks gss-checks--blue</p><ul class="gss-checks gss-checks--blue"><li>List item 1</li><li>List item 2</li></ul></div><div><p class="gss-fine">gss-checks gss-checks--green</p><ul class="gss-checks gss-checks--green"><li>List item 1</li><li>List item 2</li></ul></div><div><p class="gss-fine">gss-checks gss-checks--circle</p><ul class="gss-checks gss-checks--circle"><li>List item 1</li><li>List item 2</li></ul></div><div><p class="gss-fine">gss-checks gss-checks--circle gss-checks--green</p><ul class="gss-checks gss-checks--circle gss-checks--green"><li>List item 1</li><li>List item 2</li></ul></div><div><p class="gss-fine">gss-checks gss-checks--ring</p><ul class="gss-checks gss-checks--ring"><li>List item 1</li><li>List item 2</li></ul></div><div><p class="gss-fine">gss-checks gss-checks--circle gss-checks--x</p><ul class="gss-checks gss-checks--circle gss-checks--x"><li>List item 1</li><li>List item 2</li></ul></div><div><p class="gss-fine">gss-checks gss-checks--ring gss-checks--x</p><ul class="gss-checks gss-checks--ring gss-checks--x"><li>List item 1</li><li>List item 2</li></ul></div><div><p class="gss-fine">gss-checks gss-checks--circle gss-checks--warn</p><ul class="gss-checks gss-checks--circle gss-checks--warn"><li>List item 1</li><li>List item 2</li></ul></div><div><p class="gss-fine">gss-checks gss-checks--lines</p><ul class="gss-checks gss-checks--lines"><li>List item 1</li><li>List item 2</li></ul></div><div><p class="gss-fine">gss-checks gss-checks--icons</p><ul class="gss-checks gss-checks--icons"><li><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#check-circle"/></svg>List item 1</li><li><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#check-circle"/></svg>List item 2</li></ul></div><div><p class="gss-fine">gss-checks gss-checks--icons gss-checks--green</p><ul class="gss-checks gss-checks--icons gss-checks--green"><li><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#check"/></svg>List item 1</li><li><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#check"/></svg>List item 2</li></ul></div><div><p class="gss-fine">gss-checks gss-checks--icons gss-checks--green gss-checks--cards</p><ul class="gss-checks gss-checks--icons gss-checks--green gss-checks--cards"><li><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#check"/></svg>List item 1</li><li><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#check"/></svg>List item 2</li></ul></div></div><div class="gss-grid gss-grid--2 gss-mt"><div class="gss-flow gss-flow--lg"><p class="gss-fine">gss-flow--lg column · gss-ticks / gss-ticks--light</p><ul class="gss-ticks"><li>Tick one</li><li>Tick two</li><li>Tick three</li></ul><div class="gss-mock gss-mock--dark"><div class="gss-ticks gss-ticks--light"><span>Tick one</span><span>Tick two</span><span>Tick three</span></div></div><p class="gss-fine">gss-features</p><ul class="gss-features"><li><span class="gss-ico"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#search"/></svg></span><div><b>Feature title</b>Supporting text.</div></li><li><span class="gss-score">1</span><div><strong>Feature title</strong><span>Supporting text.</span></div></li></ul><p class="gss-fine">gss-feature (standalone)</p><div class="gss-feature"><span class="gss-ico gss-ico--plain"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#clock"/></svg></span><span><b>Feature title</b>Supporting text.</span></div><p class="gss-fine">gss-features--2</p><ul class="gss-features gss-features--2"><li><span class="gss-ico"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#pin"/></svg></span><div><b>Feature</b>Text.</div></li><li><span class="gss-ico"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#cursor"/></svg></span><div><b>Feature</b>Text.</div></li></ul></div><div class="gss-flow"><p class="gss-fine">gss-linklist</p><ul class="gss-linklist"><li><a href="#ds-lists"><span class="gss-ico"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#shield"/></svg></span><div><b>Link title</b><span>Supporting text</span></div></a></li><li><a href="#ds-lists"><span class="gss-ico"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#briefcase"/></svg></span><div><b>Link title</b><span>Supporting text</span></div></a></li></ul><p class="gss-fine">gss-linklist gss-linklist--boxed</p><div class="gss-linklist gss-linklist--boxed"><a href="#ds-lists"><b>Link title</b><span>Supporting text</span></a><a href="#ds-lists"><b>Link title</b><span>Supporting text</span></a></div><p class="gss-fine">gss-timeline</p><ul class="gss-timeline"><li><b>Period 1</b>Timeline entry</li><li><b>Period 2</b>Timeline entry</li><li><b>Period 3</b>Timeline entry</li></ul><p class="gss-fine">gss-stagger (hidden below 800px)</p><div class="gss-stagger"><span class="gss-chip gss-chip--pill"><i class="gss-dot-num">1</i>Step</span><span class="gss-chip gss-chip--pill"><i class="gss-dot-num">2</i>Step</span><span class="gss-chip gss-chip--pill"><i class="gss-dot-num">3</i>Step</span><span class="gss-chip gss-chip--pill"><i class="gss-dot-num">4</i>Step</span></div></div></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-forms","className":"gss-section"} -->
+<section id="ds-forms" class="wp-block-group gss-section"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Forms</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Forms</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">gss-form, gss-input, gss-form__row (packages), gss-step-label + gss-dot-num, gss-choices › gss-choice (+--btn, --2), gss-urlform (+--pill --joined; most CTAs).</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-grid gss-grid--3 gss-grid--start"><form class="gss-form gss-card" action="#" method="get" onsubmit="return false"><h3>gss-form</h3><p class="gss-fine">Labels, inputs, select, textarea. Focus shows a blue border + 3px ring.</p><label for="ds-f-text">Text input</label><input id="ds-f-text" type="text" name="ds_text" placeholder="Placeholder"><label for="ds-f-select">Select</label><select id="ds-f-select" name="ds_select"><option value="">Choose an option</option><option>Option A</option><option>Option B</option></select><label for="ds-f-area">Textarea</label><textarea id="ds-f-area" name="ds_area" rows="3" placeholder="Placeholder"></textarea><label for="ds-f-dis">Disabled input</label><input id="ds-f-dis" type="text" name="ds_disabled" value="Disabled" disabled><button type="submit" class="gss-btn gss-btn--block">Submit (demo, does nothing)</button><div class="gss-ticks"><span>Tick</span><span>Tick</span></div></form><form class="gss-card gss-card--float" action="#" method="get" onsubmit="return false"><h3>gss-form__row</h3><label class="gss-form__row"><span class="gss-dot-num">1</span><b>Label</b><input class="gss-input" type="url" name="ds_row_url" placeholder="https://example.com"></label><label class="gss-form__row"><span class="gss-dot-num">2</span><b>Label</b><select class="gss-input" name="ds_row_select"><option value="">Select</option><option>Option</option></select></label><label class="gss-form__row"><span class="gss-dot-num">3</span><b>Label</b><input class="gss-input" type="email" name="ds_row_mail" placeholder="name@example.com"></label><button type="submit" class="gss-btn gss-btn--block gss-mt-sm">Button →</button></form><form class="gss-form gss-card" action="#" method="get" onsubmit="return false"><h3>Step labels + choices</h3><p class="gss-step-label"><span class="gss-dot-num">1</span>gss-dot-num</p><p class="gss-step-label"><span class="gss-dot-num gss-dot-num--navy">2</span>--navy</p><p class="gss-step-label"><span class="gss-dot-num gss-dot-num--lg">3</span>--lg</p><p class="gss-step-label"><span class="gss-dot-num gss-dot-num--ring">4</span>--ring</p><div class="gss-choices"><label class="gss-choice"><input type="radio" name="ds_choice" id="ds-ch-1" value="a"><span><b>Choice title</b><small>Supporting text</small></span><span class="gss-tag gss-tag--green">Tag</span></label><label class="gss-choice"><input type="radio" name="ds_choice" id="ds-ch-2" value="b" checked><span><b>Checked choice</b><small>Supporting text</small></span><span class="gss-tag gss-tag--solid">Tag</span></label><label class="gss-choice"><input type="radio" name="ds_choice" id="ds-ch-3" value="c"><span><b>Choice title</b><small>Supporting text</small></span></label></div><p class="gss-fine gss-mt-sm">gss-choices gss-choices--2 + gss-choice--btn</p><div class="gss-choices gss-choices--2"><label class="gss-choice gss-choice--btn" for="ds-cb-1"><input type="radio" name="ds_choice_btn" value="1" id="ds-cb-1">Option 1 · $000</label><label class="gss-choice gss-choice--btn" for="ds-cb-2"><input type="radio" name="ds_choice_btn" value="2" id="ds-cb-2" checked>Option 2 · $000</label><label class="gss-choice gss-choice--btn" for="ds-cb-3"><input type="radio" name="ds_choice_btn" value="3" id="ds-cb-3">Option 3 · $000</label><label class="gss-choice gss-choice--btn" for="ds-cb-4"><input type="radio" name="ds_choice_btn" value="4" id="ds-cb-4">Option 4 · $000</label></div></form></div><div class="gss-card gss-card--flat gss-mt"><p class="gss-fine">gss-urlform</p><form class="gss-urlform" action="#" method="get" onsubmit="return false"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#link"/></svg><input type="url" name="ds_u1" placeholder="https://example.com" aria-label="URL"><button type="submit" class="gss-btn">Button →</button></form><p class="gss-fine gss-mt">gss-urlform--pill</p><form class="gss-urlform gss-urlform--pill" action="#" method="get" onsubmit="return false"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#link"/></svg><input type="url" name="ds_u2" placeholder="https://example.com" aria-label="URL"><button type="submit" class="gss-btn">Button →</button></form><p class="gss-fine gss-mt">gss-urlform--joined</p><form class="gss-urlform gss-urlform--joined" action="#" method="get" onsubmit="return false"><input type="url" name="ds_u3" placeholder="https://example.com" aria-label="URL"><button type="submit" class="gss-btn">Button →</button></form><div class="gss-note gss-mt"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#info"/></svg><span>The plugin funnel shortcode &#91;gss_get_started&#93; is styled by .gss-funnel (gss.css §12). It is intentionally not embedded here. Demo forms use action="#", return false on submit and ds_ field names.</span></div></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-pricing","className":"gss-section gss-section--soft"} -->
+<section id="ds-pricing" class="wp-block-group gss-section gss-section--soft"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Pricing</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Pricing plans</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">gss-plans › gss-plan (+--popular --sky), __ribbon, first-child gss-tag, __price, __name, __desc, gss-checks, CTA, __foot. Home and packages.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-plans"><div class="gss-plan"><span class="gss-tag gss-tag--green">Tag</span><div class="gss-plan__price">$000</div><div class="gss-plan__name">Plan name</div><p class="gss-plan__desc">Short plan description.</p><ul class="gss-checks"><li>Feature one</li><li>Feature two</li><li>Feature three</li></ul><a class="gss-btn gss-btn--ghost gss-btn--block" href="#ds-pricing">Choose plan →</a><p class="gss-plan__foot"><i class="gss-ico gss-ico--round gss-ico--sm"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#pin"/></svg></i>gss-plan__foot note</p></div><div class="gss-plan"><div class="gss-plan__price">$000 <small>/ month</small></div><div class="gss-plan__name">Plan name</div><p class="gss-plan__desc">Short plan description.</p><ul class="gss-checks"><li>Feature one</li><li>Feature two</li><li>Feature three</li></ul><a class="gss-btn gss-btn--ghost gss-btn--block" href="#ds-pricing">Choose plan →</a><p class="gss-plan__foot"><i class="gss-ico gss-ico--round gss-ico--sm"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#pin"/></svg></i>gss-plan__foot note</p></div><div class="gss-plan gss-plan--popular"><div class="gss-plan__ribbon">Ribbon · --popular</div><div class="gss-plan__price">$000 <small>/ month</small></div><div class="gss-plan__name">Plan name</div><p class="gss-plan__desc">Short plan description.</p><ul class="gss-checks"><li>Feature one</li><li>Feature two</li><li>Feature three</li></ul><a class="gss-btn gss-btn--navy gss-btn--block" href="#ds-pricing">Choose plan →</a><p class="gss-plan__foot"><i class="gss-ico gss-ico--round gss-ico--sm"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#pin"/></svg></i>gss-plan__foot note</p></div><div class="gss-plan gss-plan--sky"><div class="gss-plan__price">$000 <small>/ month</small></div><div class="gss-plan__name">Plan name</div><p class="gss-plan__desc">Short plan description.</p><ul class="gss-checks"><li>Feature one</li><li>Feature two</li><li>Feature three</li></ul><a class="gss-btn gss-btn--ghost gss-btn--block" href="#ds-pricing">Choose plan →</a><p class="gss-plan__foot"><i class="gss-ico gss-ico--round gss-ico--sm"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#pin"/></svg></i>gss-plan__foot note</p></div></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-process","className":"gss-section"} -->
+<section id="ds-process" class="wp-block-group gss-section"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Process</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Steps &amp; process</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">ol.gss-steps (+--5 --timeline --arrows --stack) › li.gss-step › gss-step__num (+--solid --sky --gold --blue); gss-step--col. Home, case studies, guarantee, team.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<p class="gss-fine gss-mt">gss-steps</p><ol class="gss-steps"><li class="gss-step"><span class="gss-step__num">1</span><div><b>Step title</b>Supporting text.</div></li><li class="gss-step"><span class="gss-step__num">2</span><div><b>Step title</b>Supporting text.</div></li><li class="gss-step"><span class="gss-step__num">3</span><div><b>Step title</b>Supporting text.</div></li><li class="gss-step"><span class="gss-step__num">4</span><div><b>Step title</b>Supporting text.</div></li></ol><p class="gss-fine gss-mt">gss-steps gss-steps--5 gss-steps--arrows · gss-step__num gss-step__num--solid</p><ol class="gss-steps gss-steps--5 gss-steps--arrows"><li class="gss-step"><span class="gss-step__num gss-step__num--solid">1</span><div><b>Step title</b>Supporting text.</div></li><li class="gss-step"><span class="gss-step__num gss-step__num--solid">2</span><div><b>Step title</b>Supporting text.</div></li><li class="gss-step"><span class="gss-step__num gss-step__num--solid">3</span><div><b>Step title</b>Supporting text.</div></li><li class="gss-step"><span class="gss-step__num gss-step__num--solid">4</span><div><b>Step title</b>Supporting text.</div></li><li class="gss-step"><span class="gss-step__num gss-step__num--solid">5</span><div><b>Step title</b>Supporting text.</div></li></ol><p class="gss-fine gss-mt">gss-steps gss-steps--timeline · gss-step__num gss-step__num--gold</p><ol class="gss-steps gss-steps--timeline"><li class="gss-step"><span class="gss-step__num gss-step__num--gold">1</span><div><b>Step title</b>Supporting text.</div></li><li class="gss-step"><span class="gss-step__num gss-step__num--gold">2</span><div><b>Step title</b>Supporting text.</div></li><li class="gss-step"><span class="gss-step__num gss-step__num--gold">3</span><div><b>Step title</b>Supporting text.</div></li><li class="gss-step"><span class="gss-step__num gss-step__num--gold">4</span><div><b>Step title</b>Supporting text.</div></li></ol><div class="gss-grid gss-grid--2"><div><p class="gss-fine gss-mt">gss-steps gss-steps--stack · gss-step__num gss-step__num--sky</p><ol class="gss-steps gss-steps--stack"><li class="gss-step"><span class="gss-step__num gss-step__num--sky">1</span><div><b>Step title</b>Supporting text.</div></li><li class="gss-step"><span class="gss-step__num gss-step__num--sky">2</span><div><b>Step title</b>Supporting text.</div></li><li class="gss-step"><span class="gss-step__num gss-step__num--sky">3</span><div><b>Step title</b>Supporting text.</div></li></ol></div><div><p class="gss-fine gss-mt">gss-step gss-step--col · gss-step__num--blue (in gss-grid--2)</p><div class="gss-grid gss-grid--2"><div class="gss-step gss-step--col"><span class="gss-step__num gss-step__num--blue">1</span><div><h3>Step title</h3><p>Supporting text.</p></div></div><div class="gss-step gss-step--col"><span class="gss-step__num gss-step__num--blue">2</span><div><h3>Step title</h3><p>Supporting text.</p></div></div></div></div></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-data","className":"gss-section gss-section--soft"} -->
+<section id="ds-data" class="wp-block-group gss-section gss-section--soft"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Data</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Stats, tables &amp; charts</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">gss-stats (+--2 --3 --compact), gss-stat (+--ink --row), gss-kpi, gss-table (+--wide --center --compact --upper; is-total is-hl is-center), gss-score, gss-bar, gss-meter, gss-scale, gss-legend, gss-bars, gss-chart.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<p class="gss-fine">gss-stats (default, 4 columns)</p><div class="gss-stats"><div class="gss-stat"><b>0,000</b>Stat label</div><div class="gss-stat"><b>0,000</b>Stat label</div><div class="gss-stat"><b>0,000</b>Stat label</div><div class="gss-stat"><b>0,000</b>Stat label</div></div><div class="gss-grid gss-grid--3 gss-mt"><div><p class="gss-fine">gss-stats--2 · gss-stat--ink</p><div class="gss-stats gss-stats--2"><div class="gss-stat gss-stat--ink"><small>Label</small><b>0,000</b><span class="gss-up">+0%</span></div><div class="gss-stat gss-stat--ink"><small>Label</small><b>0,000</b><span class="gss-up">+0%</span></div></div></div><div><p class="gss-fine">gss-stats--3 · gss-stat--row</p><div class="gss-stats gss-stats--3"><div class="gss-stat gss-stat--row"><span class="gss-ico gss-ico--plain"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#chart-bars"/></svg></span><span><b>Label:</b>Value</span></div><div class="gss-stat gss-stat--row"><span class="gss-ico gss-ico--plain"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#target"/></svg></span><span><b>Label:</b>Value</span></div><div class="gss-stat gss-stat--row"><span class="gss-ico gss-ico--plain"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#calendar"/></svg></span><span><b>Label:</b>Value</span></div></div></div><div><p class="gss-fine">gss-stats--compact</p><div class="gss-stats gss-stats--compact"><div class="gss-stat gss-stat--row"><span class="gss-ico gss-ico--sm"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#layout"/></svg></span>Label</div><div class="gss-stat gss-stat--row"><span class="gss-ico gss-ico--sm"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#search"/></svg></span>Label</div></div><p class="gss-fine gss-mt-sm">gss-kpi</p><div class="gss-kpi"><i class="gss-ico"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#trend-up"/></svg></i><div><b>KPI title</b><span>Supporting text.</span></div></div></div></div><p class="gss-fine gss-mt">gss-table-wrap › gss-table--wide gss-table--upper (+ th/td.is-hl column, tr.is-total, td.is-center)</p><div class="gss-table-wrap"><table class="gss-table gss-table--wide gss-table--upper"><thead><tr><th>Row</th><th>Column</th><th class="is-hl">Highlighted</th><th class="is-center">Centered</th><th>Column</th></tr></thead><tbody><tr><td>Row one</td><td>Value</td><td class="is-hl">Value</td><td class="is-center"><span class="gss-score">4</span></td><td><span class="gss-tag gss-tag--green">Tag</span></td></tr><tr><td>Row two</td><td>Value</td><td class="is-hl">Value</td><td class="is-center"><span class="gss-score gss-score--2">2</span></td><td><span class="gss-tag gss-tag--amber">Tag</span></td></tr><tr class="is-total"><td>Total</td><td>000</td><td class="is-hl">000</td><td class="is-center"><span class="gss-meter gss-meter--green">00%<span class="gss-bar"><i style="--w:73%"></i></span></span></td><td>000</td></tr></tbody></table></div><div class="gss-grid gss-grid--2 gss-mt-sm"><div class="gss-table-wrap"><table class="gss-table gss-table--compact gss-table--center"><thead><tr><th>--compact --center</th><th>A</th><th>B</th><th>C</th></tr></thead><tbody><tr><td>Row</td><td><i class="gss-pip"></i></td><td><i class="gss-pip gss-pip--off"></i></td><td><i class="gss-pip"></i></td></tr><tr><td>Row</td><td><i class="gss-pip gss-pip--off"></i></td><td><i class="gss-pip"></i></td><td><i class="gss-pip gss-pip--off"></i></td></tr></tbody></table></div><div class="gss-card gss-card--flat gss-card--compact"><p class="gss-fine">gss-score (+--3 --2 --1 --na --blue --tint)</p><div class="gss-row gss-row--sm gss-mt-sm"><span class="gss-score">4</span><span class="gss-score gss-score--3">3</span><span class="gss-score gss-score--2">2</span><span class="gss-score gss-score--1">1</span><span class="gss-score gss-score--na">–</span><span class="gss-score gss-score--blue">5</span><span class="gss-score gss-score--tint" style="--c:#16a34a"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#check"/></svg></span></div></div></div><div class="gss-grid gss-grid--3 gss-mt"><div class="gss-card gss-card--flat gss-flow"><p class="gss-fine">gss-bar › i (--w), --grad, --safe-warn, --warn-danger</p><span class="gss-bar"><i style="--w:60%"></i></span><span class="gss-bar gss-bar--grad"></span><span class="gss-bar gss-bar--safe-warn"></span><span class="gss-bar gss-bar--warn-danger"></span><p class="gss-fine">gss-meter (+--green --amber --red)</p><div class="gss-row"><span class="gss-meter gss-meter--green">73%<span class="gss-bar"><i style="--w:73%"></i></span></span><span class="gss-meter gss-meter--amber">58%<span class="gss-bar"><i style="--w:58%"></i></span></span><span class="gss-meter gss-meter--red">38%<span class="gss-bar"><i style="--w:38%"></i></span></span><span class="gss-meter">50%<span class="gss-bar"><i style="--w:50%"></i></span></span></div></div><div class="gss-card gss-card--flat gss-flow"><p class="gss-fine">gss-bars (--h) + gss-legend / --stack</p><div class="gss-bars"><span style="--h:28%"></span><span style="--h:36%"></span><span style="--h:32%"></span><span style="--h:48%"></span><span style="--h:44%"></span><span style="--h:60%"></span><span style="--h:58%"></span><span style="--h:76%"></span><span style="--h:88%"></span></div><div class="gss-legend"><span style="--c:#1a5fe0">Series A</span><span style="--c:#1e9e5a">Series B</span><span style="--c:#f08a24">Series C</span></div><div class="gss-legend gss-legend--stack"><span style="--c:#1f5fd1">Stacked one</span><span style="--c:#c9dbf7">Stacked two</span></div></div><div class="gss-card gss-card--flat"><p class="gss-fine">gss-chart (inline SVG) + gss-big</p><div class="gss-big">+00%</div><div class="gss-chart"><svg viewBox="0 0 300 110" aria-hidden="true"><g stroke="#eef2f6"><path d="M0 20H300M0 55H300M0 90H300"/></g><path d="M0 92 L50 84 L100 88 L150 66 L200 58 L250 38 L300 14 L300 110 L0 110Z" fill="#1a5fe0" opacity=".1"/><path d="M0 92 L50 84 L100 88 L150 66 L200 58 L250 38 L300 14" fill="none" stroke="#1a5fe0" stroke-width="2.5" stroke-linejoin="round"/><circle cx="300" cy="14" r="4" fill="#1a5fe0"/></svg></div></div></div><p class="gss-fine gss-mt">gss-scale</p><div class="gss-scale"><div><b>Left label</b><span>Supporting text</span></div><div class="gss-bar gss-bar--grad"></div><div><b>Right label</b><span>Supporting text</span></div></div><p class="gss-fine gss-mt">gss-scale--5</p><div class="gss-scale gss-scale--5"><div><b class="gss-up">Low</b><span>Text</span></div><div class="gss-bar gss-bar--safe-warn"></div><div><b class="gss-caution">Mid</b><span>Text</span></div><div class="gss-bar gss-bar--warn-danger"></div><div><b class="gss-down">High</b><span>Text</span></div></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-accordion","className":"gss-section"} -->
+<section id="ds-accordion" class="wp-block-group gss-section"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Accordion</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">FAQ / accordion</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">div.gss-faq (+--chevron --numbered) › core/details or raw details; nested details.gss-faq__more (company). FAQ on 9 pages.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-grid gss-grid--3 gss-grid--start"><p class="gss-fine">gss-faq (default) · core/details</p><p class="gss-fine">gss-faq--chevron · core/details</p><p class="gss-fine">gss-faq--numbered --chevron + gss-faq__more · raw HTML</p></div>
+<!-- /wp:html -->
+
+<!-- wp:group {"className":"gss-grid gss-grid--3 gss-grid--start"} -->
+<div class="wp-block-group gss-grid gss-grid--3 gss-grid--start"><!-- wp:group {"className":"gss-faq"} -->
+<div class="wp-block-group gss-faq"><!-- wp:details {"showContent":true} -->
+<details class="wp-block-details" open><summary>Question title?</summary><!-- wp:paragraph -->
+<p>Answer text in a core/details block.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Question title?</summary><!-- wp:paragraph -->
+<p>Answer text.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"gss-faq gss-faq--chevron"} -->
+<div class="wp-block-group gss-faq gss-faq--chevron"><!-- wp:details {"showContent":true} -->
+<details class="wp-block-details" open><summary>Question title?</summary><!-- wp:paragraph -->
+<p>Answer text.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Question title?</summary><!-- wp:paragraph -->
+<p>Answer text.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-faq gss-faq--numbered gss-faq--chevron"><details><summary><span class="gss-dot-num gss-dot-num--lg">1</span>Question title?</summary><div>Answer text.</div></details><details><summary><span class="gss-dot-num gss-dot-num--lg">2</span>Question title?</summary><div>Answer text.</div></details><details class="gss-faq__more"><summary>Show more (gss-faq__more)</summary><div class="gss-faq gss-faq--numbered gss-faq--chevron"><details><summary><span class="gss-dot-num gss-dot-num--lg">3</span>Nested question?</summary><div>Answer text.</div></details><details><summary><span class="gss-dot-num gss-dot-num--lg">4</span>Nested question?</summary><div>Answer text.</div></details></div></details></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-people","className":"gss-section gss-section--soft"} -->
+<section id="ds-people" class="wp-block-group gss-section gss-section--soft"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">People / proof</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Quotes, authors, avatars</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">gss-quote (+--box), gss-author (+--center), gss-avatar (+--sm --lg --blue), gss-portrait, gss-book › gss-cover, gss-role, gss-card__media/__body. Team page + author boxes.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-grid gss-grid--3"><div class="gss-card gss-flow"><blockquote class="gss-quote">“gss-quote — short quotation text.”</blockquote><blockquote class="gss-quote gss-quote--box">“gss-quote--box — boxed quotation.”</blockquote><div class="gss-author gss-author--center"><div class="gss-avatar gss-avatar--sm gss-avatar--blue">AB</div><div><strong>Name</strong><span>gss-author--center · avatar --sm --blue</span></div></div></div><div class="gss-card gss-author"><div class="gss-avatar gss-avatar--lg">AB</div><div><h3>Name</h3><span class="gss-role">gss-role</span><p>gss-author with gss-avatar--lg.</p><div class="gss-row gss-row--sm gss-mt-sm"><a class="gss-link gss-link--ink" href="#ds-people">Profile</a></div></div></div><div class="gss-card gss-flow"><div class="gss-row"><div class="gss-avatar">AB</div><div class="gss-avatar gss-avatar--sm">AB</div><div class="gss-avatar gss-avatar--blue">AB</div></div><p>gss-avatar · --sm · --blue</p></div></div><div class="gss-grid gss-grid--4 gss-mt"><div class="gss-portrait"><div class="gss-portrait__ini">AB</div><b>gss-portrait</b><span>Role</span></div><div class="gss-grid gss-grid--2"><div class="gss-book"><div class="gss-cover">Cover title</div><b>gss-book</b><small>gss-cover (default colour)</small></div><div class="gss-book"><div class="gss-cover">Cover title</div><b>Book title</b><small>Subtitle</small></div></div><div class="gss-card gss-card--flush"><div class="gss-card__media"></div><div class="gss-card__body"><h3>gss-card--flush</h3><p>gss-card__media + __body</p><a class="gss-link" href="#ds-people">Link →</a></div></div><div class="gss-card gss-card--flush"><div class="gss-card__media"></div><div class="gss-card__body"><h3>Card title</h3><p>Supporting text</p></div></div></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-cta","className":"gss-section"} -->
+<section id="ds-cta" class="wp-block-group gss-section"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">CTA / guarantee</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">CTA bands &amp; guarantee</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">gss-cta (+--center --light) › gss-cta__copy closes every page; gss-guarantee in gss-card--gold on home and packages.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-grid"><div class="gss-cta"><div class="gss-wrap"><div class="gss-cta__copy"><p class="gss-eyebrow">gss-cta</p><h3>Default CTA band</h3><p>Supporting text.</p><div class="gss-row gss-mt"><a class="gss-btn gss-btn--light" href="#ds-cta">Primary →</a><a class="gss-btn gss-btn--line" href="#ds-cta">Secondary</a></div></div></div></div><div class="gss-cta gss-cta--center"><div class="gss-wrap"><div class="gss-cta__copy"><p class="gss-eyebrow">gss-cta gss-cta--center</p><h3>Centred CTA band</h3><p>Supporting text.</p><div class="gss-row gss-mt"><a class="gss-btn gss-btn--light" href="#ds-cta">Primary →</a><a class="gss-btn gss-btn--line" href="#ds-cta">Secondary</a></div></div></div></div><div class="gss-cta gss-cta--light"><div class="gss-wrap"><div class="gss-cta__copy"><p class="gss-eyebrow">gss-cta gss-cta--light</p><h3>Light CTA band</h3><p>Supporting text.</p><div class="gss-row gss-mt"><a class="gss-btn" href="#ds-cta">Primary →</a><a class="gss-btn gss-btn--ghost" href="#ds-cta">Secondary</a></div></div></div></div></div><div class="gss-card gss-card--gold gss-card--lg gss-mt"><div class="gss-guarantee"><svg class="gss-guarantee__seal gss-guarantee__seal--hide-sm" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 8 13v17c0 15 10 26 24 30 14-4 24-15 24-30V13L32 4z" fill="#f6dfa8" stroke="#d6a044" stroke-width="3" stroke-linejoin="round"/><path d="m21 32 8 8 15-16" fill="none" stroke="#b07a1d" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="gss-flow"><p class="gss-eyebrow gss-eyebrow--gold">gss-card--gold · gss-guarantee</p><h3 class="gss-h2--sm">Guarantee title</h3><p>Seal · copy · links grid; collapses to one column below 800px.</p></div><div class="gss-grid gss-grid--gap-sm"><a class="gss-link" href="#ds-cta">Link one →</a><a class="gss-link" href="#ds-cta">Link two →</a></div></div></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-interaction","className":"gss-section gss-section--soft"} -->
+<section id="ds-interaction" class="wp-block-group gss-section gss-section--soft"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Interaction (CSS only)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Tabs &amp; filter</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">CSS-only gss-tabs (+--highlight --dim --deep --head; nav --grid --stack) on packages and guarantee; gss-filter on case studies. Radio names prefixed ds-.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-grid gss-grid--2 gss-grid--start"><div><div class="gss-tabs"><input class="gss-sr" type="radio" name="ds-t1" id="ds-t1-a" checked><input class="gss-sr" type="radio" name="ds-t1" id="ds-t1-b"><div class="gss-tabs__nav"><label for="ds-t1-a">Tab one</label><label for="ds-t1-b">Tab two</label></div><div class="gss-tabs__panel gss-card gss-card--flat"><h3>Panel one</h3><p>Only the chosen panel shows.</p></div><div class="gss-tabs__panel gss-card gss-card--flat"><h3>Panel two</h3><p>Only the chosen panel shows.</p></div></div></div><div><div class="gss-tabs"><input class="gss-sr" type="radio" name="ds-t2" id="ds-t2-a" checked><input class="gss-sr" type="radio" name="ds-t2" id="ds-t2-b"><div class="gss-tabs__nav gss-tabs__nav--grid"><label for="ds-t2-a">Grid tab</label><label for="ds-t2-b">Grid tab</label></div><div class="gss-tabs__panel"><p class="gss-small">gss-tabs__nav--grid · panel one</p></div><div class="gss-tabs__panel"><p class="gss-small">gss-tabs__nav--grid · panel two</p></div></div></div></div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div class="gss-card gss-card--soft gss-mt"><div class="gss-tabs gss-tabs--highlight gss-tabs--head"><input class="gss-sr" type="radio" name="ds-t3" id="ds-t3-a" checked><input class="gss-sr" type="radio" name="ds-t3" id="ds-t3-b"><h3 class="gss-h2--sm">gss-tabs--highlight --head</h3><div class="gss-tabs__nav"><label for="ds-t3-a">Option A</label><label for="ds-t3-b">Option B</label></div><div class="gss-tabs__panels"><div class="gss-tabs__panel gss-card gss-card--flat"><ul class="gss-checks gss-checks--circle"><li>Panel A item</li><li>Panel A item</li></ul></div><div class="gss-tabs__panel gss-card gss-card--flat"><ul class="gss-checks gss-checks--circle"><li>Panel B item</li><li>Panel B item</li></ul></div></div></div></div><div class="gss-mt"><div class="gss-tabs gss-tabs--dim gss-tabs--deep"><input class="gss-sr" type="radio" name="ds-t4" id="ds-t4-a" checked><input class="gss-sr" type="radio" name="ds-t4" id="ds-t4-b"><div class="gss-head"><h3 class="gss-h2--sm">gss-tabs--dim --deep</h3><div class="gss-tabs__nav"><label for="ds-t4-a">Rows 1</label><label for="ds-t4-b">Rows 2</label></div></div><div class="gss-table-wrap"><table class="gss-table gss-table--compact"><thead><tr><th>Row</th><th>Value</th></tr></thead><tbody><tr data-tab="1"><td>data-tab="1"</td><td>Bright on tab 1</td></tr><tr data-tab="2"><td>data-tab="2"</td><td>Bright on tab 2</td></tr><tr data-tab="1"><td>data-tab="1"</td><td>Bright on tab 1</td></tr></tbody></table></div></div></div><div class="gss-card gss-card--sky gss-mt"><div class="gss-tabs gss-tabs--deep"><input class="gss-sr" type="radio" name="ds-t5" id="ds-t5-a" checked><input class="gss-sr" type="radio" name="ds-t5" id="ds-t5-b"><input class="gss-sr" type="radio" name="ds-t5" id="ds-t5-c"><div class="gss-grid gss-grid--2 gss-grid--center"><div><h3 class="gss-h2--sm">gss-tabs__nav--stack</h3><div class="gss-tabs__nav gss-tabs__nav--stack"><label for="ds-t5-a">Option one</label><label for="ds-t5-b">Option two</label><label for="ds-t5-c">Option three</label></div></div><div class="gss-tabs__panels"><div class="gss-tabs__panel gss-card"><p class="gss-eyebrow">Result</p><h3 class="gss-h2--sm">Panel one</h3><p>Supporting text.</p></div><div class="gss-tabs__panel gss-card"><p class="gss-eyebrow">Result</p><h3 class="gss-h2--sm">Panel two</h3><p>Supporting text.</p></div><div class="gss-tabs__panel gss-card"><p class="gss-eyebrow">Result</p><h3 class="gss-h2--sm">Panel three</h3><p>Supporting text.</p></div></div></div></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":3,"className":"gss-mt"} -->
+<h3 class="wp-block-heading gss-mt">gss-filter</h3>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<div class="gss-filter"><input class="gss-sr" type="radio" name="ds-f" id="ds-f-all" value="all" checked><input class="gss-sr" type="radio" name="ds-f" id="ds-f-ecom" value="ecommerce"><input class="gss-sr" type="radio" name="ds-f" id="ds-f-local" value="local"><input class="gss-sr" type="radio" name="ds-f" id="ds-f-tech" value="technical"><div class="gss-tabs__nav gss-tabs__nav--grid"><label for="ds-f-all" data-for="all">All</label><label for="ds-f-ecom" data-for="ecommerce"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#cart"/></svg>Ecommerce</label><label for="ds-f-local" data-for="local"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#pin"/></svg>Local</label><label for="ds-f-tech" data-for="technical"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#settings"/></svg>Technical</label></div><div class="gss-note gss-mt-sm" data-hide-filtered><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#info"/></svg>[data-hide-filtered] — visible only while “All” is selected.</div><div class="gss-grid gss-grid--3 gss-mt-sm"><article class="gss-card gss-card--flat gss-card--compact" data-cat="ecommerce"><span class="gss-tag gss-tag--square">Ecommerce</span><h3>Card 1</h3><p>data-cat="ecommerce"</p></article><article class="gss-card gss-card--flat gss-card--compact" data-cat="ecommerce"><span class="gss-tag gss-tag--square">Ecommerce</span><h3>Card 2</h3><p>data-cat="ecommerce"</p></article><article class="gss-card gss-card--flat gss-card--compact" data-cat="local"><span class="gss-tag gss-tag--square">Local</span><h3>Card 1</h3><p>data-cat="local"</p></article><article class="gss-card gss-card--flat gss-card--compact" data-cat="local"><span class="gss-tag gss-tag--square">Local</span><h3>Card 2</h3><p>data-cat="local"</p></article><article class="gss-card gss-card--flat gss-card--compact" data-cat="technical"><span class="gss-tag gss-tag--square">Technical</span><h3>Card 1</h3><p>data-cat="technical"</p></article><article class="gss-card gss-card--flat gss-card--compact" data-cat="technical"><span class="gss-tag gss-tag--square">Technical</span><h3>Card 2</h3><p>data-cat="technical"</p></article></div></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-mock","className":"gss-section"} -->
+<section id="ds-mock" class="wp-block-group gss-section"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Mock UI</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Mock UI illustrations</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">gss-mock (+--tilt --dark), gss-searchbar, gss-glogo, gss-stars, gss-mock__tabs, gss-result (+--hl --you), gss-skel, gss-thumb, gss-seg, gss-pip. Local, ranking, guarantee, performance pages.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-grid gss-grid--3 gss-grid--start"><div class="gss-mock"><div class="gss-searchbar"><b class="gss-glogo"><i>G</i><i>o</i><i>o</i><i>g</i><i>l</i><i>e</i></b>search query</div><div class="gss-mock__tabs"><span>All</span><span class="is-on">is-on</span><span>Images</span><span>News</span></div><div class="gss-result gss-result--hl"><span class="gss-dot-num">1</span><div><b>gss-result--hl</b><small>https://example.com</small><span class="gss-result__t">gss-result__t title</span></div><span class="gss-thumb"></span></div><div class="gss-result"><span class="gss-dot-num">2</span><div><b>gss-result</b><small>https://example.com</small></div><span class="gss-thumb gss-thumb--muted"></span></div><div class="gss-result gss-result--you"><span class="gss-dot-num">3</span><div><b>gss-result--you</b><br><span class="gss-stars">★★★★★</span> 0.0 (00)</div><span class="gss-thumb gss-thumb--faint"></span></div></div><div class="gss-mock gss-mock--tilt"><h3>gss-mock--tilt</h3><span class="gss-skel" style="--w:90%"></span><span class="gss-skel" style="--w:70%"></span><span class="gss-skel" style="--w:40%"></span><ul class="gss-checks gss-checks--icons gss-checks--lines gss-mt-sm"><li><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#doc"/></svg>Line item</li><li><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#doc"/></svg>Line item</li></ul><div class="gss-row gss-row--between gss-mt-sm"><span class="gss-seg"><span class="is-on">gss-seg</span><span>Two</span><span>Three</span></span><span><i class="gss-pip"></i><i class="gss-pip"></i><i class="gss-pip gss-pip--off"></i></span></div></div><div class="gss-mock gss-mock--dark gss-flow"><small>gss-mock--dark</small><p class="gss-big">+00%</p><div class="gss-bars"><span style="--h:30%"></span><span style="--h:38%"></span><span style="--h:34%"></span><span style="--h:46%"></span><span style="--h:52%"></span><span style="--h:60%"></span><span style="--h:72%"></span><span style="--h:84%"></span></div><ul class="gss-legend gss-legend--stack gss-plain"><li style="--c:#5aa2ff">Series one</li><li style="--c:#3dcc93">Series two</li></ul></div></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-templates","className":"gss-section gss-section--soft"} -->
+<section id="ds-templates" class="wp-block-group gss-section gss-section--soft"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Theme</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Template positions</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">What functions.php and the templates provide. Empty widget areas print nothing.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="gss-table-wrap"><table class="gss-table gss-table--compact"><thead><tr><th>Type</th><th>ID / file / hook</th><th>Behaviour</th></tr></thead><tbody><tr><td>Menu</td><td>primary</td><td>Header navigation (desktop mega menu, mobile details menu)</td></tr><tr><td>Menu</td><td>footer</td><td>Footer navigation</td></tr><tr><td>Widget area</td><td>header-top</td><td>Compact band above the header</td></tr><tr><td>Widget area</td><td>header-action</td><td>Header actions next to the primary menu</td></tr><tr><td>Widget area</td><td>announcement</td><td>Compact band below the header</td></tr><tr><td>Widget area</td><td>before-content</td><td>Band before page content (canvas and classic)</td></tr><tr><td>Widget area</td><td>after-content</td><td>Band after page content (canvas and classic)</td></tr><tr><td>Widget area</td><td>sidebar</td><td>Content sidebar, classic pages only</td></tr><tr><td>Widget area</td><td>footer-1 … footer-4</td><td>Footer columns</td></tr><tr><td>Widget area</td><td>footer-bottom</td><td>Footer bottom line</td></tr><tr><td>Template</td><td>page.php</td><td>Content contains an H1 → full-width canvas main.gss-page, no theme title. Otherwise classic layout (container, optional sidebar) with the page title as the single H1</td></tr><tr><td>Template</td><td>front-page.php</td><td>Static front page: canvas like page.php, then the automatic page directory (teaser cards of published pages)</td></tr><tr><td>Template</td><td>index.php</td><td>Posts, blog home and archives; title printed as H1</td></tr><tr><td>Filter</td><td>gf_page_directory_heading</td><td>Changes the page directory heading</td></tr><tr><td>Custom field</td><td>_gf_hide_from_home</td><td>Set on a page to hide it from the page directory</td></tr><tr><td>Theme mod</td><td>gf_hide_page_directory</td><td>Customizer switch that hides the whole page directory</td></tr><tr><td>Robots</td><td>design-system</td><td>This page is noindex, nofollow (wp_robots) and should stay private</td></tr></tbody></table></div><div class="gss-note gss-note--sky gss-mt"><svg class="gss-icon" aria-hidden="true"><use href="/wp-content/themes/gss/assets/icons.svg#warning"/></svg><span><b>Rule:</b> exactly one H1 per page, inside the hero. The theme never prints a second title H1 on canvas pages; demo heroes on this page use H2.</span></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","anchor":"ds-workflow","className":"gss-section"} -->
+<section id="ds-workflow" class="wp-block-group gss-section"><!-- wp:group {"className":"gss-wrap"} -->
+<div class="wp-block-group gss-wrap"><!-- wp:group {"className":"gss-head"} -->
+<div class="wp-block-group gss-head"><!-- wp:group {"className":"gss-head__main"} -->
+<div class="wp-block-group gss-head__main"><!-- wp:paragraph {"className":"gss-eyebrow"} -->
+<p class="gss-eyebrow">Workflow</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How to build a new page</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"gss-sub"} -->
+<p class="gss-sub">The short version: compose from existing components, never style in content.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Start from patterns:</strong> insert a pattern from the “Guaranteed SEO design system” category, or copy a section from this page or a migrated page.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Compose:</strong> stack gss-section › gss-wrap › gss-head + components; put the single H1 in the first gss-hero; give sections an anchor for in-page links.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>No CSS in content:</strong> no style blocks, no style attributes except data values (--w, --h, --c, --x, --y), no page-specific classes; use core/html only for icons, forms, SVG and dense markup.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Check:</strong> the editor shows no invalid blocks and every gss-* class exists in gss.css.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Extend the theme only:</strong> add or change a generic component in theme/src/gss.css, rebuild, document it in docs/components.md and add a specimen to this page.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
